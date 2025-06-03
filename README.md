@@ -150,7 +150,7 @@ We can observe that this grammar isn't fit for an LL(1) parser, given that its a
 
 In this case, we are trying to parse the phrase `Ich gehe zum strand und zum kino`, and we can observe that it generates four different trees, because a prepPhrase can be reached in several ways. 
 
-We can also aprreciate this with the following example:
+We can also appreciate this with the following example:
 
 ![image](https://github.com/user-attachments/assets/c07a792c-a89f-49ae-9430-2c91574c7be8)
 
