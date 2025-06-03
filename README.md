@@ -275,7 +275,7 @@ The final version of the grammar that no longer has ambiguity nor left recursion
 - du will läuft
 - ein bruder gehe ein supermarkt
 
-The command to run this program is 'python grammar.py', and these are the following outputs,generated for both the correct and incorrect answers.
+The command to run this program is 'python grammar.py', and these are the following outputs, generated for both the correct and incorrect answers.
 
 ![image](https://github.com/user-attachments/assets/e372c205-5aae-4040-b217-b8cf6eced7c2)
 
@@ -295,11 +295,17 @@ Professor Noam Chomsky is an American professor and public intellectual known fo
 The Chomsky Hierarchy states that the Type 3 grammars are restricted and not so powerful, while Type 0 grammars are completly unrestricted and can be recognized by a Turing Machine.
 The grammar I have worked on for this evidence is catalogued as a Context-Free grammar, or Type 2 according to the Chomsky Hierarchy. This, on one hand, is because I have eliminated non-terminals on the left side of the grammar. On the other hand, given that the grammar has both terminals and non terminas on its right side, it can´t classify as a Type 0 grammar, a regular grammar.
 
+## Time Complexity
+
+To analyze the time complexity, we have to take into consideretaion several aspects. For starters, we need to know what type of grammar it is according to the Chomsky Hierarchy. In this case, the grammar that is being analyzed, as mentioned previously, a context-free grammar. Another aspect to take into consideration is the parsing algorithm being used on the grammar, given that the approach (top-down or bottom-up) in some cases can make the time complexity exponential. For this grammar, I am using a LL(1) parsing algorithm, which favors a top-down approach. The input size could also be used to calculate the time complexity, but since, in this case, the phrases used are short and simple, it won't be given as much importance as the two previous parameters and the one that follows. Lastly, ambiguity will also impact the time complexity of a grammar. In this case, the grammar has been cleaned of ambiguity, so it won´t impact on the time complexity of the latest version of the grammar.
+
 ---
 ## References
 
 Grandinetti, P. (2019, september 30). *What is a programming language grammar?*. Compilers. https://pgrandinetti.github.io/compilers/page/what-is-a-programming-language-grammar/ 
 
-Schoen, K., PhD. (2024, 1 october). What Are the Rules for German Sentence Structure? Duolingo Blog. https://blog.duolingo.com/german-sentence-structure/
+Schoen, K., PhD. (2024, 1 october). *What Are the Rules for German Sentence Structure?* Duolingo Blog. https://blog.duolingo.com/german-sentence-structure/
 
-Premios Fundación BBVA Fronteras del Conocimiento. (s. f.). Entrevista con Noam Chomsky, Premio Fronteras del Conocimiento en Humanidades [Vídeo]. Premios Fronteras. https://www.premiosfronterasdelconocimiento.es/galardonados/noam-chomsky/
+Sippu, S (1982, April -May). *Derivational complexity of Context-Free Grammars.* [PDF File]. https://doi.org/10.1016/S0019-9958(82)91111-1 
+
+Premios Fundación BBVA Fronteras del Conocimiento. (s. f.). Entrevista con Noam Chomsky, Premio Fronteras del Conocimiento en Humanidades [Video]. Premios Fronteras. https://www.premiosfronterasdelconocimiento.es/galardonados/noam-chomsky/
