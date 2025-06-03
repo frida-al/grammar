@@ -7,7 +7,7 @@ Grammars are 'a set of instructions about how to write statements that are valid
 
 For this evidence, I will develop a context-free grammar based on the German language, specifically, the basic sentence structure in German. This structure uses the first slot of the phrase for the subject, the second for the verb and the third for a complement. It is important to understand that the first two slots can never have antything else on them, at least for a basic phrase.
 
-For the main sentence, I will be handling the structure S -> Sub V Comp, that stands for Sub = subjetc, V = verb and Comp = complement. The complemente will generate most of the complexity of this grammar, given that is the only non-terminal in the main sentence. 
+For the main sentence, I will be handling the structure S -> Sub V Comp, that stands for Sub = subjetc, V = verb and Comp = complement. The complement will generate most of the complexity of this grammar, given that is the only non-terminal in the main sentence. 
 Here are the words translations I will be working with:
 
 ## Subjects
