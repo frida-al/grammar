@@ -299,6 +299,12 @@ The grammar I have worked on for this evidence is catalogued as a Context-Free g
 
 To analyze the time complexity, we have to take into consideretaion several aspects. For starters, we need to know what type of grammar it is according to the Chomsky Hierarchy. In this case, the grammar that is being analyzed, as mentioned previously, a context-free grammar. Another aspect to take into consideration is the parsing algorithm being used on the grammar, given that the approach (top-down or bottom-up) in some cases can make the time complexity exponential. For this grammar, I am using a LL(1) parsing algorithm, which favors a top-down approach. The input size could also be used to calculate the time complexity, but since, in this case, the phrases used are short and simple, it won't be given as much importance as the two previous parameters and the one that follows. Lastly, ambiguity will also impact the time complexity of a grammar. In this case, the grammar has been cleaned of ambiguity, so it won´t impact on the time complexity of the latest version of the grammar.
 
+1. For the first version of the grammar, we have ambiguity and left recursion, which makes the grammar a bit complex, so it is not so easy to evaluate the time complexity. Ambiguity can add to the time complexity because of the multiple ways it has to implement a phrase, and left recursion because if can infinitly try to build a phrase. Both of these considerations can lead up to exponential time.
+   
+2. After cleaning the grammar, and given the characteristics of the type of grammar and the parsing algorithm used, it has a time complexity of O(n). This is because the LL(1) doesn´t allow backtracking and it checks every component of the input string only once.
+
+(Sippu, 1982).
+
 ---
 ## References
 
