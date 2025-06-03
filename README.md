@@ -306,6 +306,12 @@ To analyze the time complexity, we have to take into consideretaion several aspe
 (Sippu, 1982).
 
 ---
+
+### Versions
+
+Version 2.0 02/06/2025. With the feedback given, I added the time complexity of the grammar both before and after the cleaning process.
+
+---
 ## References
 
 Grandinetti, P. (2019, september 30). *What is a programming language grammar?*. Compilers. https://pgrandinetti.github.io/compilers/page/what-is-a-programming-language-grammar/ 
